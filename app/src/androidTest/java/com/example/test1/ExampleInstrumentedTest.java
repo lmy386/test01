@@ -22,5 +22,8 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.test1", appContext.getPackageName());
+        int[] num = {1,2,3,4,5,6,7,8};
+        System.out.println(num);
+        int[] m = num;
     }
 }

@@ -6,12 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
+    <ImageButton
+        android:layout_marginTop="50dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagebutton"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@+id/imagebutton"
         android:id="@+id/login_edt_username"
         android:layout_marginTop="10dp"
         android:hint="请输入用户名"
+        android:maxLines="1"
         android:inputType="text"/>
 
     <EditText
@@ -20,6 +29,7 @@
         android:id="@+id/login_edt_passwprd"
         android:layout_marginTop="10dp"
         android:hint="请输入密码"
+        android:maxLines="1"
         android:layout_below="@+id/login_edt_username"
         android:inputType="textPassword"/>
 
