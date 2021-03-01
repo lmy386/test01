@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        //进行初始化操作，加载布局、绑定事件等
         Log.i(TAG, "onCreate: ");
 
 
@@ -41,36 +42,42 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        //由活动不可见变为可见的时候调用
         Log.i(TAG, "onStart: ");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        //准备和用户进行交互的时候调用，此时活动位于栈顶并处于运行状态
         Log.i(TAG, "onResume: ");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        //去启动或恢复另一个活动的时候调用
         Log.i(TAG, "onPause: ");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        //活动完全不可见的时候调用
         Log.i(TAG, "onStop: ");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //活动被销毁之前调用
         Log.i(TAG, "onDestroy: ");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+        //活动由停止状态变为运行状态之前调用
         Log.i(TAG, "onRestart: ");
     }
 }

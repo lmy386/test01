@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_xiaoxi"
+        android:icon="@drawable/xiaoxi"
+        android:title="消息"/>
+    <item
+        android:id="@+id/navigation_lianxiren"
+        android:icon="@drawable/lianxiren"
+        android:title="联系人"/>
+    <item
+        android:id="@+id/navigation_shezhi"
+        android:icon="@drawable/shezhi"
+        android:title="消息"/>
+
+</menu>
