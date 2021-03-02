@@ -11,4 +11,11 @@
         android:layout_height="match_parent"
         android:text="这是消息页面,接受系统广播" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fg_btn"
+        android:text="Service"
+        android:textSize="26dp"
+        android:layout_marginTop="80dp"/>
 </FrameLayout>

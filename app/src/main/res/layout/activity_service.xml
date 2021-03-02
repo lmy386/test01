@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/service_btn"
+        android:layout_marginTop="60dp"
+        android:text="点击切换文字"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_tv"
+        android:text="这是未点击之前的文字"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/service_btn"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_btn1"
+        android:layout_below="@+id/service_tv"
+        android:text="start Service"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_btn2"
+        android:layout_below="@+id/service_btn1"
+        android:text="Stop Service"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_btn3"
+        android:layout_below="@+id/service_btn2"
+        android:text="Bind Service"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_btn4"
+        android:layout_below="@+id/service_btn3"
+        android:text="Unbind Service"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_btn5"
+        android:layout_below="@+id/service_btn4"
+        android:text="start IntentService"/>
+
+</RelativeLayout>

@@ -3,6 +3,9 @@
     package="com.example.test1">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test1">
-        <activity android:name=".MyFragmentActivity"></activity>
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service android:name=".MyIntentService"/>
+
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".MyFragmentActivity" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -19,8 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>
