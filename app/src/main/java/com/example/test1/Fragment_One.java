@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 public class Fragment_One extends Fragment {
     private Button mbtn;
+    private Button mbtn2;
 
 
 
@@ -30,6 +31,15 @@ public class Fragment_One extends Fragment {
                 Intent intent = new Intent(getActivity(),ServiceActivity.class);
                 startActivity(intent);
                 //finish();
+            }
+        });
+
+        mbtn2 = view.findViewById(R.id.fg_btn2);
+        mbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),ContentProviderActivity.class);
+                startActivity(intent);
             }
         });
 

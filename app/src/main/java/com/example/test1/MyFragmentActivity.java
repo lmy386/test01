@@ -62,7 +62,7 @@ public class MyFragmentActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //取消注册
+        //取消注册广播接收器
         unregisterReceiver(networkChangeReceiver);
     }
 

@@ -12,4 +12,11 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/main_btn"
         android:text="点击跳转到登录"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_btn1"
+        android:layout_below="@+id/main_btn"
+        android:text="点击打开百度"/>
 </RelativeLayout>

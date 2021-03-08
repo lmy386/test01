@@ -18,4 +18,11 @@
         android:text="Service"
         android:textSize="26dp"
         android:layout_marginTop="80dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fg_btn2"
+        android:text="ContentProvider"
+        android:textSize="26dp"
+        android:layout_marginTop="130dp"/>
 </FrameLayout>

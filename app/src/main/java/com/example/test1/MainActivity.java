@@ -3,6 +3,7 @@ package com.example.test1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,8 +29,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"点击了Button，即将跳转",Toast.LENGTH_SHORT).show();
                 //点击之后跳转到login
                 Intent intent = new Intent(MainActivity.this,login.class);
+                intent.putExtra("values","hello LoginActivity");
                 startActivity(intent);
-                finish();
+               // finish();
+            }
+        });
+        Button mbtn1 = findViewById(R.id.main_btn1);
+        mbtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.baidu.com"));
+                startActivity(intent);
             }
         });
         //进行初始化操作，加载布局、绑定事件等

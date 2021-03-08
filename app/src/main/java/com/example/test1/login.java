@@ -27,6 +27,9 @@ public class login extends AppCompatActivity {
         edt_password = findViewById(R.id.login_edt_passwprd);
         btn_login = findViewById(R.id.login_btn);
         mimageButton = findViewById(R.id.imagebutton);
+        Intent intent = getIntent();
+        String str = intent.getStringExtra("values");
+        Log.d("printvalues", str);
         //给登录按钮设置监听
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +39,7 @@ public class login extends AppCompatActivity {
                 if (userName.equals("admin")&&passWord.equals("123456")){
                     Intent intent = new Intent(login.this,MyFragmentActivity.class);
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }
                 else Toast.makeText(login.this, "请输入正确的用户名和密码", Toast.LENGTH_SHORT).show();
 
